@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF47DCD32141E65400CAD00A /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF47DCD22141E65400CAD00A /* CoreData.swift */; };
 		BF8E0D382136116700E039B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E0D372136116700E039B2 /* AppDelegate.swift */; };
-		BF8E0D3A2136116700E039B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E0D392136116700E039B2 /* ViewController.swift */; };
 		BF8E0D3D2136116700E039B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8E0D3B2136116700E039B2 /* Main.storyboard */; };
 		BF8E0D402136116700E039B2 /* FlashDiet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF8E0D3E2136116700E039B2 /* FlashDiet.xcdatamodeld */; };
 		BF8E0D422136116800E039B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8E0D412136116800E039B2 /* Assets.xcassets */; };
 		BF8E0D452136116800E039B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8E0D432136116800E039B2 /* LaunchScreen.storyboard */; };
+		BFFE2A702139D1030088E169 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE2A6F2139D1030088E169 /* FoodCell.swift */; };
+		BFFE2A722139D1A00088E169 /* FoodGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE2A712139D1A00088E169 /* FoodGridViewController.swift */; };
+		BFFE2A742139DDED0088E169 /* PhotoPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE2A732139DDED0088E169 /* PhotoPickerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF47DCD22141E65400CAD00A /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		BF8E0D342136116700E039B2 /* FlashDiet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashDiet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8E0D372136116700E039B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF8E0D392136116700E039B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF8E0D3C2136116700E039B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF8E0D3F2136116700E039B2 /* FlashDiet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlashDiet.xcdatamodel; sourceTree = "<group>"; };
 		BF8E0D412136116800E039B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8E0D442136116800E039B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF8E0D462136116800E039B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFFE2A6F2139D1030088E169 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		BFFE2A712139D1A00088E169 /* FoodGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGridViewController.swift; sourceTree = "<group>"; };
+		BFFE2A732139DDED0088E169 /* PhotoPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +62,16 @@
 		BF8E0D362136116700E039B2 /* FlashDiet */ = {
 			isa = PBXGroup;
 			children = (
+				BFFE2A712139D1A00088E169 /* FoodGridViewController.swift */,
+				BFFE2A732139DDED0088E169 /* PhotoPickerManager.swift */,
 				BF8E0D372136116700E039B2 /* AppDelegate.swift */,
-				BF8E0D392136116700E039B2 /* ViewController.swift */,
+				BF47DCD22141E65400CAD00A /* CoreData.swift */,
 				BF8E0D3B2136116700E039B2 /* Main.storyboard */,
 				BF8E0D412136116800E039B2 /* Assets.xcassets */,
 				BF8E0D432136116800E039B2 /* LaunchScreen.storyboard */,
 				BF8E0D462136116800E039B2 /* Info.plist */,
 				BF8E0D3E2136116700E039B2 /* FlashDiet.xcdatamodeld */,
+				BFFE2A6F2139D1030088E169 /* FoodCell.swift */,
 			);
 			path = FlashDiet;
 			sourceTree = "<group>";
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFE2A722139D1A00088E169 /* FoodGridViewController.swift in Sources */,
 				BF8E0D402136116700E039B2 /* FlashDiet.xcdatamodeld in Sources */,
-				BF8E0D3A2136116700E039B2 /* ViewController.swift in Sources */,
+				BFFE2A702139D1030088E169 /* FoodCell.swift in Sources */,
 				BF8E0D382136116700E039B2 /* AppDelegate.swift in Sources */,
+				BF47DCD32141E65400CAD00A /* CoreData.swift in Sources */,
+				BFFE2A742139DDED0088E169 /* PhotoPickerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2KBY6D8Q6;
 				INFOPLIST_FILE = FlashDiet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2KBY6D8Q6;
 				INFOPLIST_FILE = FlashDiet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

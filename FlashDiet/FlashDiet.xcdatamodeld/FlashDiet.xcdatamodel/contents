@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14270.9" systemVersion="" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FoodEntry" representedClassName="FoodEntry" syncable="YES" codeGenerationType="class">
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="image" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="nutritionalInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NutrionalInfo" inverseName="foodEntry" inverseEntity="NutrionalInfo" syncable="YES"/>
+        <fetchIndex name="byDate">
+            <fetchIndexElement property="date" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="NutrionalInfo" representedClassName="NutrionalInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="caloricDensity" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="calories" optional="YES" transient="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="foodEntry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FoodEntry" inverseName="nutritionalInfo" inverseEntity="FoodEntry" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FoodEntry" positionX="-4272.95703125" positionY="868.0546875" width="128" height="105"/>
+        <element name="NutrionalInfo" positionX="-4133.203125" positionY="1056.0078125" width="126.99609375" height="105"/>
+    </elements>
 </model>
